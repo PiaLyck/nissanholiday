@@ -1,1 +1,1 @@
-console.log('Hul igennem');
+console.log('BLAH');
