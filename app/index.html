@@ -17,6 +17,7 @@
 
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
+  
   <!-- endbuild -->
 
 </head>
@@ -25,18 +26,35 @@
   <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-  <div class="container">
-    <h3>Testing fonts, testing fonts</h3>
+  <div class="bg-img">
+    <div class="container">
+      <div class="form">
+        <header>
+          <h2 class="header-title">Enter your details</h2>
+          <h3 class="header-subtitle">Fill out the form to get one step closer to sipping champagne in first class.</h3>
+        </header>
+        <label for="title-dropdown"></label>
+        <select name="title-dropdown" id="title-dropdown">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/validate/validate.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
   <!-- build:js scripts/plugins.js -->
+
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
   <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
