@@ -1,1 +1,0 @@
-{"version":3,"sources":["main.js"],"names":["$","selectize","create","sortField"],"mappings":";;AAAAA,EAAE,iBAAF,EAAqBC,SAArB,CAA+B;AAC3BC,YAAQ,IADmB;AAE3BC,eAAW;AAFgB,CAA/B","file":"main.js","sourcesContent":["$('#title-dropdown').selectize({\n    create: true,\n    sortField: 'text'\n});"]}
