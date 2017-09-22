@@ -1,16 +1,54 @@
 /* Form elements */
 
-.form-item {
-  position: relative;
+.form:last-child {
+  margin-bottom: 40px;
 }
 
-label[for="title-dropdown-selectized"]{ /* Replace with *-selectized to reuse for all select labels */
-    position: absolute;
+.form-item {
+  position: relative;
+  margin-bottom: 20px;
+  input {
+    font-size: $form-inputs;
+  }
+  input[type="tel"] {
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    border-bottom: 1px solid $label-grey;
+  }
+  input[type="text"] {
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    border-bottom: 1px solid $label-grey;
+    /* change this to red when validation fails */
+  }
+  label[for="title-dropdown-selectized"] {
+    display: none;
+    /*     position: absolute;
     z-index: 2;
     background-color: white;
-    height: 26px;
+    height: 24px;
+    bottom: 2px;
     color: $select-options;
-    font-family: $font-light;
+    font-family: $font-light; */
+  }
+}
+
+.unicode-part {
+  width: 20%;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.vin-part {
+  width: 32%;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .form-label {
@@ -19,8 +57,35 @@ label[for="title-dropdown-selectized"]{ /* Replace with *-selectized to reuse fo
   font-size: $small-heading;
 }
 
+// Validation, tooltips and input text messages 
+.validator-msg {
+  font-size: $form-input-error;
+  color: $nissan-color;
+  position: relative;
+  display: none;
+  @media(min-width: $screen-xs) {
+    right: 0;
+    top: 20px;
+    position: absolute;
+  }
+}
+
+.input-text-msg {
+  font-size: $form-input-error;
+  color: $black;
+  position: absolute;
+  text-decoration: underline;
+  right: 0;
+}
+
+.tooltip {
+  @include size(20px, 20px);
+  background: url('../images/tooltip.png') no-repeat;
+}
+
 
 /* Selectize  */
+
 .selectize-dropdown,
 .selectize-input,
 .selectize-input input {
@@ -32,21 +97,22 @@ label[for="title-dropdown-selectized"]{ /* Replace with *-selectized to reuse fo
 }
 
 .selectize-dropdown .active {
-    background-color: $select-hover;
-    color: $label-grey;
-}
-.selectize-dropdown .single{
-
+  background-color: $select-hover;
+  color: $label-grey;
 }
 
-.selectize-input.focus{
-    box-shadow: none;
+.selectize-input.focus {
+  box-shadow: none;
 }
+
 .selectize-input.dropdown-active {
   border-radius: 0;
 }
 
-.selectize-control.single .selectize-input, .selectize-control.single .selectize-input input{
-    border: none;
-    border-bottom: 1px solid $label-grey; /* change this to red when validation fails */
+.selectize-control.single .selectize-input,
+.selectize-control.single .selectize-input input {
+  border: none;
+  border-bottom: 1px solid $label-grey;
+  /* change this to red when validation fails */
+  max-width: 141px;
 }
