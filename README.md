@@ -1,6 +1,6 @@
 # AKQA campaign for Nissan Australia
 
-Yeoman boilerplate (Sass, Bower, Gulp...)
+Yeoman boilerplate (Bower, Gulp, Sass, Bootstrap...)
 
 Validate.js for form validation
 
