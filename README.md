@@ -4,6 +4,6 @@ Yeoman boilerplate (Sass, Bower, Gulp...)
 
 Validate.js for form validation
 
-Selectize.js for custom <select>'s
+Selectize.js for custom selects/dropdowns
 
 
