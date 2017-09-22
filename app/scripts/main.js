@@ -1,1 +1,4 @@
-console.log('BLAH');
+$('#title-dropdown').selectize({
+    create: true,
+    sortField: 'text'
+});

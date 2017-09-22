@@ -5,11 +5,39 @@ $icon-font-path: '../fonts/';
 @import "variables";
 @import "fonts";
 
-body{
-  font-family: $font-primary;
+/* Form page */
+
+.header-title {
+  color: $nissan-color;
+  font-family: $font-secondary;
+  text-transform: uppercase;
 }
 
-b, strong{
+.header-subtitle {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.bg-img {
+  /* Ines Pedroza: "These bg-images will be provided by third party agency" */
+  background: url('https://i.pinimg.com/originals/08/01/d2/0801d2bfbd2052783824712a792f2df0.jpg') no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 620px;
+  background-color: $white;
+  height: 100vh;
+
+}
+
+.form {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+b,
+strong {
   font-family: $font-secondary;
 }
 
@@ -20,13 +48,13 @@ b, strong{
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-family: $font-primary;
 }
 
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
+
 .header,
 .marketing,
 .footer {
@@ -34,55 +62,71 @@ body {
   padding-left: 15px;
 }
 
+
 /* Custom page header */
+
 .header {
   padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
 }
 
+
 /* Make the masthead heading the same height as the navigation */
+
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
 }
 
+
 /* Custom page footer */
+
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
+
 /* Customize container */
+
 @media (min-width: 768px) {
   .container {
     max-width: 730px;
   }
 }
-.container-narrow > hr {
+
+.container-narrow>hr {
   margin: 30px 0;
 }
 
+
 /* Main marketing message and sign up button */
+
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
 }
 
+
 /* Supporting marketing content */
+
 .marketing {
   margin: 40px 0;
 }
-.marketing p + h4 {
+
+.marketing p+h4 {
   margin-top: 28px;
 }
 
+
 /* Responsive: Portrait tablets and up */
+
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
   .header,
@@ -100,4 +144,3 @@ body {
     border-bottom: 0;
   }
 }
-
