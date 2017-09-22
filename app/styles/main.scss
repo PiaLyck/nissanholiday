@@ -4,9 +4,9 @@ $icon-font-path: '../fonts/';
 // endbower
 @import "variables";
 @import "fonts";
+@import "forms";
 
 /* Form page */
-
 .header-title {
   color: $nissan-color;
   font-family: $font-secondary;
@@ -50,6 +50,7 @@ strong {
 
 body {
   font-family: $font-primary;
+  color: $black;
 }
 
 

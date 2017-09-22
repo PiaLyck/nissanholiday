@@ -1,0 +1,52 @@
+/* Form elements */
+
+.form-item {
+  position: relative;
+}
+
+label[for="title-dropdown-selectized"]{ /* Replace with *-selectized to reuse for all select labels */
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    height: 26px;
+    color: $select-options;
+    font-family: $font-light;
+}
+
+.form-label {
+  text-transform: uppercase;
+  color: $label-grey;
+  font-size: $small-heading;
+}
+
+
+/* Selectize  */
+.selectize-dropdown,
+.selectize-input,
+.selectize-input input {
+  border-radius: 0;
+  color: $select-options;
+  font-family: $font-light;
+  font-size: $form-inputs;
+  box-shadow: none;
+}
+
+.selectize-dropdown .active {
+    background-color: $select-hover;
+    color: $label-grey;
+}
+.selectize-dropdown .single{
+
+}
+
+.selectize-input.focus{
+    box-shadow: none;
+}
+.selectize-input.dropdown-active {
+  border-radius: 0;
+}
+
+.selectize-control.single .selectize-input, .selectize-control.single .selectize-input input{
+    border: none;
+    border-bottom: 1px solid $label-grey; /* change this to red when validation fails */
+}
