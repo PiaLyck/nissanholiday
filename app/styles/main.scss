@@ -24,6 +24,7 @@ $icon-font-path: '../fonts/';
   /* Ines Pedroza: "These bg-images will be provided by third party agency" */
   background: url('https://i.pinimg.com/originals/08/01/d2/0801d2bfbd2052783824712a792f2df0.jpg') no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 .container {
@@ -72,6 +73,13 @@ body {
   color: $black;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 
 /* Links */
 
@@ -93,21 +101,22 @@ a:active {
   text-transform: uppercase;
   font-family: $font-secondary;
   outline: none;
-  background:none;
-  border:none;
+  background: none;
+  border: none;
   -webkit-appearance: none;
   color: $white;
   width: 100%;
-  margin-top:20px;
-
+  margin-top: 20px;
 }
-.btn.active{
+
+.btn.active {
   background-color: $nissan-color;
 }
 
 .btn:disabled {
   background-color: $button-inactive;
 }
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
@@ -187,15 +196,15 @@ a:active {
   width: 100%;
 }
 
-.w-20{
+.w-20 {
   width: 20%;
 }
 
-.w-30{
+.w-30 {
   width: 30%;
 }
 
-.last{
+.last {
   margin-right: 0;
   padding-right: 0;
 }
