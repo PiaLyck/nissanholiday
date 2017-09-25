@@ -1,0 +1,1 @@
+"use strict";$("#title-dropdown").selectize({create:!0,sortField:"text"}),$(".unicode-part").keyup(function(){this.value.length==this.maxLength&&$(this).next(".unicode-part").focus()});
