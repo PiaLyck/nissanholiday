@@ -10,3 +10,4 @@ $('.unicode-part').keyup(function () {
         $(this).next('.unicode-part').focus();
     }
 });
+//# sourceMappingURL=main.js.map
